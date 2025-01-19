@@ -1,0 +1,114 @@
+{
+  "id": "uxp-savingtool",
+  "name": "uxp-savingtool",
+  "version": "1.0.0",
+  "main": "index.html",
+  "featureFlags": {
+    "enableAlerts": true
+  },
+  "host": [
+    {
+      "app": "PS",
+      "minVersion": "26.2.0"
+    }
+  ],
+  "manifestVersion": 5,
+  
+  "entrypoints": [
+    {
+      "type": "command",
+      "id": "showAlert",
+      "label": "Show alert"
+    },
+    
+    {
+      "type": "panel",
+      "id": "vanilla",
+      "minimumSize": {
+        "width": 430,
+        "height": 400
+      },
+      "maximumSize": {
+        "width": 2000,
+        "height": 2000
+      },
+      "preferredDockedSize": {
+        "width": 430,
+        "height": 400
+      },
+      "preferredFloatingSize": {
+        "width": 430,
+        "height": 400
+      },
+      "icons": [
+        {
+          "width": 32,
+          "height": 32,
+          "path": "icons/icon_D.png",
+          "scale": [
+            1,
+            2
+          ],
+          "theme": [
+            "dark",
+            "darkest"
+          ],
+          "species": [
+            "generic"
+          ]
+        },
+        {
+          "width": 32,
+          "height": 32,
+          "path": "icons/icon_N.png",
+          "scale": [
+            1,
+            2
+          ],
+          "theme": [
+            "lightest",
+            "light"
+          ],
+          "species": [
+            "generic"
+          ]
+        }
+      ],
+      "label": {
+        "default": "Toolset by p1kus"
+      }
+    }
+  ],
+  "icons": [
+    {
+      "width": 23,
+      "height": 23,
+      "path": "icons/dark.png",
+      "scale": [
+        1,
+        2
+      ],
+      "theme": [
+        "darkest",
+        "dark",
+        "medium"
+      ]
+    },
+    {
+      "width": 23,
+      "height": 23,
+      "path": "icons/light.png",
+      "scale": [
+        1,
+        2
+      ],
+      "theme": [
+        "lightest",
+        "light"
+      ]
+    }
+  ],
+  "requiredPermissions": {
+    "localFileSystem": "fullAccess"
+}
+}
