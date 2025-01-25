@@ -1,0 +1,41 @@
+body {
+    color: white;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  li:before {
+    content: '• ';
+    width: 3em;
+  }
+
+  #layers {
+    border: 1px solid #808080;
+    border-radius: 4px;
+    padding: 16px;
+  }
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number] {
+  width: 50px;
+   opacity: 1;
+}
+
+h3 {
+  margin: 0;
+  margin-top: 18px;
+}
+
+.buttons-container {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+sp-button {
+  margin: 4px;
+  width: 150px;
+}

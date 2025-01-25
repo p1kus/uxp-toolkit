@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="main.js"></script> 
+    <link rel="stylesheet" href="style.css">   
+</head>
+<body>
+  <sp-heading>GS-Watermark-RMTool</sp-heading>
+  <div class="contentFillControls-container">
+    <h3>Content Fill Options</h3>
+    <label for="tolerance">
+      <p>Tolerance [0-255]</p>
+      <input type="number" name="tolerance" id="tolerance" min="0" max="255" value="64" placeholder="64">
+    </label>
+    <label for="expand">
+      <p>Expand [0-16]</p>
+      <input type="number" name="expand" id="expand" step="any" min="0" max="16" value="3.0" placeholder="3.0">
+    </label>
+  </div>
+  <div class="buttons-container">
+    <sp-button id="adjustBtn">Remove Watermark</sp-button>
+    <sp-button id="contentFillBtn">Content Fill</sp-button>
+    <sp-button id="cleanupBtn">Cleanup</sp-button>
+  </div>
+</body>
+</html>
